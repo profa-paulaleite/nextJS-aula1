@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import Destino from "./components/destino/Destino";
 
 export default function Home() {
   const destinos = [
@@ -13,10 +14,7 @@ export default function Home() {
   return (
     <section className={styles.sectionMain}>
       {destinos.map(destino => (
-        <Link key={destino.id} href={`/destinos/${destino.id}`} className={styles.link}>
-          <Image alt={destino.nome} src={destino.caminhoImagem} className={styles.imagemDestino} width={150} height={150}/>
-          <p> {destino.nome} </p>
-        </Link>
+        <Destino key={destino.id} destino={destino}/>
       ))}
     </section>
   );

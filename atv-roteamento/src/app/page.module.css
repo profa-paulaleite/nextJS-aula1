@@ -4,19 +4,3 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.link {
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 0.5rem;
-  width: 200px;
-  transition: transform 0.2s;
-}
-
-.imagemDestino {
-  border-radius: 10px;
-  object-fit: cover;
-}
